@@ -35,6 +35,8 @@ const selectPokemon = async (pokemon) => {
   .catch(err => alert(err))
   .finally(()=> loading.value = false)
 
+console.log(pokemonSelected)
+
 }
 
 </script>
@@ -47,7 +49,13 @@ const selectPokemon = async (pokemon) => {
             
             <CardPokemonSelected 
             :name="pokemonSelected?.name"  
-            :img="pokemonSelected?.sprites.other.dream_world.front_default" 
+            :img="pokemonSelected?.sprites.other.dream_world.front_default"
+            :hd="pokemonSelected?.stats[0].base_stat"
+            :attack="pokemonSelected?.stats[1].base_stat"
+            :defense="pokemonSelected?.stats[2].base_stat"
+            :special_attack="pokemonSelected?.stats[3].base_stat"
+            :special_defense="pokemonSelected?.stats[5].base_stat"
+            :speed="pokemonSelected?.stats[5].base_stat"
             :loading="loading"
             />             
              

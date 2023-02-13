@@ -1,5 +1,5 @@
 <script setup>
-  const pokemon = defineProps(["img", "name", "base_stat", "loading"])
+  const pokemon = defineProps(["img", "name", "hd", "attack", "defense", "special_attack", "special_defense", "speed", "loading"])
 
 </script>
 
@@ -30,12 +30,12 @@
         <div class="col" style='text-align:left'>
           <ul class="stats">
             <h4>Base de stats:</h4>
-            <li><strong>HP:</strong>{{ pokemon.base_stat }}</li>
-            <li><strong>ATTACK:</strong>{{ pokemon.attack }}</li>
-            <li><strong>DEFENSE:</strong>{{ pokemon.defense }}</li>
-            <li><strong>SPECIAL ATTACK:</strong>{{ pokemon.specialAttack }}</li>
-            <li><strong>SPECIAL DEFENSE:</strong>{{ pokemon.specialDefense }}</li>
-            <li><strong>SPEED:</strong>{{ pokemon.speed }}</li>
+            <li><strong>HP: </strong>{{ pokemon.hd }}</li>
+            <li><strong>ATTACK: </strong>{{ pokemon.attack }}</li>
+            <li><strong>DEFENSE: </strong>{{ pokemon.defense }}</li>
+            <li><strong>SPECIAL ATTACK: </strong>{{ pokemon.special_attack }}</li>
+            <li><strong>SPECIAL DEFENSE: </strong>{{ pokemon.special_defense }}</li>
+            <li><strong>SPEED: </strong>{{ pokemon.speed }}</li>
           </ul>
         </div>
         
@@ -93,6 +93,12 @@
 
     .first-initial {
       height: 150px;
+    }
+
+    .stats {
+      padding: 0;
+      margin: 0;
+      font-size: .8em;
     }
   }
 
