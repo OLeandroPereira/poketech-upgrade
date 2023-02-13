@@ -35,5 +35,11 @@
   padding: .2rem;
 }
 
+@media (max-width: 600px) {
+   
+    .cardListPokemon img {
+      max-width: 70%;
+    }
+}
 </style>
 

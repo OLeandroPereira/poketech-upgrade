@@ -57,16 +57,16 @@ const selectPokemon = async (pokemon) => {
 
           </div>
           
-          <div class="col-sm-12 col-md-6 mt-5 bg-warning">
+          <div class="col-sm-12 col-md-6">
             <div class="card card-list">
-              <div class="card-body row">
+              <div>
 
-                <div class="mb-3">
+                <div>
                   <label 
                   hidden 
                   for="searchPokemonField" 
                   class="form-label">
-                  Pesquisar...
+                  Pesquisar Pokemon...
                   </label>
 
                   <input 
@@ -74,13 +74,13 @@ const selectPokemon = async (pokemon) => {
                   type="text" 
                   class="form-control" 
                   id="searchPokemonField" 
-                  placeholder="Pesquisar...">
+                  placeholder="Pesquisar Pokemon...">
                 </div>
 
               </div>
             </div>
 
-            <div class="card-list mt-3">
+            <div class="card-list">
               <div class="card-body row">
                 <ListPokemons 
                 v-for="pokemon in pokemonsFiltered"
@@ -99,12 +99,20 @@ const selectPokemon = async (pokemon) => {
 </template>
 
 <style scoped>
-  .card-list {
+   .card-list {
     max-height: 70vh;
-    max-height: 450px;
+    max-height: 545px;
     overflow-y: scrool;
     overflow-x: hidden;
+    margin: 0;
   }
+
+  @media (max-width: 600px) {
+   .card-body {
+    max-height: 160px;
+   }
+    
+  }  
 
 </style>
 

@@ -4,8 +4,8 @@
 </script>
 
 <template>
-  <div class="CardPokemonSelected mt-5"
-  :class="loading ? '' : 'animate__animated animate__flipInX'"
+  <div class="CardPokemonSelected"
+  :class="loading ? '' : 'animate__animated animate__bounceInRight'"
   >
     <img 
     v-if="pokemon.name"
@@ -26,32 +26,34 @@
       <h5 class="card-title text-center">{{ pokemon.name || '???'}}</h5>
       <hr>
       
-        <div class="row">
-          <div class="col" style='text-align:left'>
-            <h5>Base de stats:</h5>
-            <ul class="stats">
-              <li><strong>HP:</strong>{{ pokemon.hp }}</li>
-              <li><strong>ATTACK:</strong>{{ pokemon.attack }}</li>
-              <li><strong>DEFENSE:</strong>{{ pokemon.defense }}</li>
-              <li><strong>SPECIAL ATTACK:</strong>{{ pokemon.specialAttack }}</li>
-              <li><strong>SPECIAL DEFENSE:</strong>{{ pokemon.specialDefense }}</li>
-              <li><strong>SPEED:</strong>{{ pokemon.speed }}</li>
-            </ul>
-          </div>
-          
-          
-          <div class="developer col">
-            <img src="../assets/Foto.png" class="card-img-top" alt="Desenvolvedor do App">
-            <p>Desenvolvedor<br>Front-end</p>
-            
-            <p>Leandro Pereira</p>
-          </div> 
+      <div class="row p-3">
+        <div class="col" style='text-align:left'>
+          <ul class="stats">
+            <h4>Base de stats:</h4>
+            <li><strong>HP:</strong>{{ pokemon.hp }}</li>
+            <li><strong>ATTACK:</strong>{{ pokemon.attack }}</li>
+            <li><strong>DEFENSE:</strong>{{ pokemon.defense }}</li>
+            <li><strong>SPECIAL ATTACK:</strong>{{ pokemon.specialAttack }}</li>
+            <li><strong>SPECIAL DEFENSE:</strong>{{ pokemon.specialDefense }}</li>
+            <li><strong>SPEED:</strong>{{ pokemon.speed }}</li>
+          </ul>
+        </div>
+        
+        <div class="developer col">
+          <img src="../assets/Foto.png" class="card-img-top" alt="Desenvolvedor do App">
+          <p class="mt-2">Leandro Pereira</p>
+          <strong>Desenvolvedor<br>Front-end</strong>
+        </div> 
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+  .card-body {
+    padding: 0;
+  }
+
   .developer {
     line-height: 15px;
 
@@ -63,10 +65,14 @@
   }
 
   .CardPokemonSelected {
-    max-height: 70vh;
+    max-height: 100vh;
     color: #fff;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,96,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+  
+  .stats {
+      list-style: none;
   }
 
   .first-initial {
@@ -75,19 +81,20 @@
 
   @media (max-width: 600px) {
    
-   
-
     .descricao {
       height: 50px;
     }
     
     .developer img {
-      height: 50px;
+      max-width: 60%;
+
+      border: 3px solid #eebe65;
     }
 
-    .stats {
-      list-style: none;
-    }
+    .first-initial {
+      height: 150px;
+  }
+    
 
   }
 
