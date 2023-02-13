@@ -1,23 +1,13 @@
 <template>
   <div class="container mt-4">
-    <div class="card">
-      <h1 class="text-center m-5">Teste da CopyBase</h1>
+    <div class="card bg-warning">
+      <h1 class="text-center m-5">Este projeto foi feito para um Teste Tecnico</h1>
       <div class="card-body p-3">
-        <p>Você irá construir uma aplicação para listagem e busca de pokemons. É uma aplicação simples, onde iremos buscar por um determinado pokémon, pelo seu nome, para termos acesso às suas propriedades requisitadas através da PokeAPI v2. </p>
+        <p>Recebi um teste tecnico para ser entregue em dois dias, na hora foi um susto, porque eu não sabia se conseguiria entregar no prazo que foi solicitado. Mas com fé e coragem fui pra cima, com toda força e dedicação, foram horas de estudos e madrugadas adentro para poder desenvolver o projeto.</p>
 
+        <p>Infelizmente não consegui finalizar a parte de busca do API, onde só consegui fazer a busca da imagem e figura, mas mesmo assim entreguei imcompleto. Mesmo que eu não continue no processo seletivo, foi de grande avalia tudo que aprendi nesses dois dias, evolui em coisas que anteriormente eu tinha dificuldade, descobri que desenvolver com <strong>VUE </strong>não é um bicho de sete cabeças, e senti mais confiança para fazer novos projetos utilizando o framework.</p>
 
-        <p>Nossa ideia de interface é uma tela com apenas um campo de busca no centro da tela, que ao ser acionado com o nome do pokémon, irá submeter esta pesquisa para a PokeAPI, retornando as informações do pokémon buscado e de suas evoluções (Evolution Chains).</p> 
-
-        <p>Para cada um dos pokémons listados (o pesquisado e suas evoluções), gostaríamos de ver seu nome e sua imagem.</p>
-
-
-        <p>Quando clicarmos em um pokémon listado, queremos listar suas principais características (hp, attack, defense, special attack, special defense e speed). Obviamente quanto mais informações você mostrar melhor (organizadas, usando princípios básicos de UI/UX), então fique a vontade para exibir o que mais achar interessante.</p>
-
-      </div>
-      <hr>
-      <div class="p-3">
-        <h1 class="text-center mb-5">Agradecimento</h1>
-        <p>Gostaria de aproveitar e agradecer a oportunidade de participar desse processo tecnico. Será uma enorme alegria, se eu for um dos selecionados para a próxima etapa, darei o meu máximo, para responder a espectativa da empresa.</p>
+        <p>Eu clonei o meu projeto do desafio, e continue tentando resolver a dificuldade que eu estava tendo sobre o consumo do API. E pra minha surpresa, consegui resolver em pouco tempo, mexendo e testando sem parar até eu entender onde eu estava errando, agora meu projeto encontra-se finalizado, e o que posso dizer é que estou orgulhoso de mim mesmo, pela minha persistência e dedicação para resolver o problema onde eu estava tendo dificuldade, e por sentir mais confiança em mim para desenvolver novos projetos.</p>
       </div>
     </div>
   </div>
