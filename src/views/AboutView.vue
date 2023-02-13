@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-4">
     <div class="card bg-warning">
-      <h1 class="text-center m-5">Este projeto foi feito para um Teste Tecnico</h1>
+      <h1 class="text-center m-5">Projeto criado para um Teste Tecnico</h1>
       <div class="card-body p-3">
         <p>Recebi um teste tecnico para ser entregue em dois dias, na hora foi um susto, porque eu não sabia se conseguiria entregar no prazo que foi solicitado. Mas com fé e coragem fui pra cima, com toda força e dedicação, foram horas de estudos e madrugadas adentro para poder desenvolver o projeto.</p>
 
