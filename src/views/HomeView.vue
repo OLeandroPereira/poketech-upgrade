@@ -14,7 +14,7 @@ let loading = ref(false)
 
 
 onMounted(()=>{
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=200&offset=0")
   .then(res => res.json())
   .then(res => pokemons.value = res.results);
 })
@@ -35,8 +35,6 @@ const selectPokemon = async (pokemon) => {
   .catch(err => alert(err))
   .finally(()=> loading.value = false)
 
-  console.log(pokemonSelected.value)
-
 }
 
 </script>
@@ -50,14 +48,13 @@ const selectPokemon = async (pokemon) => {
             <CardPokemonSelected 
             :name="pokemonSelected?.name"  
             :img="pokemonSelected?.sprites.other.dream_world.front_default" 
-            
             :loading="loading"
             />             
              
 
           </div>
           
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 m-auto">
             <div class="card card-list">
               <div>
 

@@ -1,5 +1,5 @@
 <script setup>
-  const pokemon = defineProps(["img", "name", "hp", "loading"])
+  const pokemon = defineProps(["img", "name", "base_stat", "loading"])
 
 </script>
 
@@ -23,14 +23,14 @@
     >
 
     <div class="card-body text-center">
-      <h5 class="card-title text-center">{{ pokemon.name || '???'}}</h5>
+      <h5 class="card-title text-center">{{ pokemon.name || 'Pesquise o Pokemon na barra de busca'}}</h5>
       <hr>
       
       <div class="row p-3">
         <div class="col" style='text-align:left'>
           <ul class="stats">
             <h4>Base de stats:</h4>
-            <li><strong>HP:</strong>{{ pokemon.hp }}</li>
+            <li><strong>HP:</strong>{{ pokemon.base_stat }}</li>
             <li><strong>ATTACK:</strong>{{ pokemon.attack }}</li>
             <li><strong>DEFENSE:</strong>{{ pokemon.defense }}</li>
             <li><strong>SPECIAL ATTACK:</strong>{{ pokemon.specialAttack }}</li>
@@ -61,7 +61,7 @@
   .developer img {
     max-width: 40%;
     border-radius: 50%;
-    border: 9px solid #eebe65;
+    border: 4px solid #eebe65;
   }
 
   .CardPokemonSelected {
@@ -93,9 +93,7 @@
 
     .first-initial {
       height: 150px;
-  }
-    
-
+    }
   }
 
 </style>
