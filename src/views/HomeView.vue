@@ -54,7 +54,7 @@ console.log(pokemonSelected)
             :attack="pokemonSelected?.stats[1].base_stat"
             :defense="pokemonSelected?.stats[2].base_stat"
             :special_attack="pokemonSelected?.stats[3].base_stat"
-            :special_defense="pokemonSelected?.stats[5].base_stat"
+            :special_defense="pokemonSelected?.stats[4].base_stat"
             :speed="pokemonSelected?.stats[5].base_stat"
             :loading="loading"
             />             
